@@ -3,7 +3,7 @@
     function getCartArray() {
         var cartArray = localStorage['cartArray'];
         if (!cartArray) {
-            cartArray = [null];
+            cartArray = [];
             localStorage.setItem('cartArray', JSON.stringify(cartArray));
         } else {
             cartArray = JSON.parse(cartArray);
