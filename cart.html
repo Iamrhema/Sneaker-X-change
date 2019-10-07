@@ -41,7 +41,7 @@
         <section id = "navigation">
             <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent">
                     <a class="navbar-brand" href="./index.html">SXE</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"><img src="./images/bars-solid.svg" alt="" srcset=""></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -83,10 +83,11 @@
                 </tr>
             </table>
             <p class="cart-contents">Your cart is currently empty.</p>
-            <button id="clearCart">Clear Cart</button>
+            <button id="clearCart" class="btn btn-dark" style="border-radius:20px">Clear Cart</button>
         </div>
-        <button id="ShowForm" style="margin-top: 30px;"> Proceed purchase</button>
+        <button id="ShowForm" class="btn btn-dark" type = "button">Proceed purchase</button>
     </div>
+    
 
     <div id="shippingForm">
         <form>
@@ -100,7 +101,12 @@
 
             <div class="form-group">
                 <label for="Coupon">Enter Coupon</label>
-                <input type="number" placeholder="12345" class="form-control" id="Coupon" rrequired/>
+                <select class="form-control" required>
+                    <option>12345</option>
+                    <option>98021</option>
+                    <option>98761</option>
+                    <option>32084</option>
+                </select>
             </div>
 
             <div class="form-group">
@@ -110,7 +116,7 @@
                     <option>Collection</option>
                 </select>
             </div>
-            <button id="submit" type="submit">submit</button>
+            <button id="submit" type="submit" style="border-radius:20px" class="btn btn-dark">submit</button>
         </form>
     </div>
 
