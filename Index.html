@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="catalogue.css">
+    <script src="./jquery/index.js"></script>
+    <script src="./jquery/jquery-1.8.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header id="content">
+        <section id="navigation">
+            <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent">
+                <a class="navbar-brand" href="./index.html">SXE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><img src="./images/bars-solid.svg" alt="" srcset=""></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- navigation link -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- home navLink -->
+                        <li class="nav-item">
+                            <a class="nav-link" Id="logo" href="./index.html">HOME</a></li>
+                        <!-- About navLink -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cart.html">CART</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <div id="headSpace" class="container-fluid text-center">
+                <h1 id="header"><a href="./index.html">sneaker-X-change</a></h1>
+
+            </div>
+        </section>
+    </header>
+
+    <div class="wrapper">
+        <div class="container">
+            <p>You currently have <span class="item-total">0</span> items in your cart.</p>
+        </div>
+    </div>
+    <div id="cart" style="display: none;">
+        <h2>Cart</h2>
+        <div class="basket">
+            <table class="table table-striped cart">
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>QTY</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </table>
+            <p class="cart-contents">Your cart is currently empty.</p>
+
+        </div>
+    </div>
+    </div>
+
+    <div id="body">
+        <h1 id="sneakerHead">Sneakers</h1>
+        <div class="row">
+            <div class="images">
+                <div class="text-center">
+                    <h1 class="description">Nike Air</h1>
+                </div>
+                <img class="car" src="https://i.pinimg.com/originals/0b/3c/a2/0b3ca228b070a29fb06a0cf10e43ba21.jpg" alt="Sneaker">
+                <div></div>
+                <h5>R <span class="price"> 2400.00</span></h5>
+
+                <input class="qty" type="number" value="1">
+                <button style="border-radius: 30px;top: 50px;" type="button"
+                    class="btn btn-default btn-sm cartButton add">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+            </div>
+
+            <div class="images">
+                <div class="text-center">
+                    <h1 class="description">Nike Armax</h1>
+                </div>
+                <img  class="car" src="https://i.pinimg.com/originals/45/c9/bd/45c9bd7cb7560e2f8693ef8b1eca73e1.jpg" alt="audi-R8">
+                <h5>R<span class="price"> 2199.99</span></h5>
+
+                <input class="qty" type="number" value="1">
+                <button style="border-radius: 30px;top: 50px;" type="button"
+                    class="btn btn-default btn-sm cartButton add">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+            </div>
+
+            <div class="images">
+                <div class="text-center">
+                    <h1 class="description">Vans cherckered</h1>
+                </div>
+                <img class="car " src="https://i.pinimg.com/originals/c8/16/cc/c816cc989e77b96be5625c52de624dbf.jpg" alt="Sneaker">
+
+                <h5>R<span class="price"> 2499.99</span></h5>
+
+                <input class="qty" type="number" value="1">
+                <button style="border-radius: 30px;top: 50px;" type="button"
+                    class="btn btn-default btn-sm cartButton add">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="images">
+                <div class="text-center">
+                    <h1 class="description">Jordan 97</h1>
+                </div>
+                <img class="car " src="https://i.pinimg.com/originals/9e/de/19/9ede1956132880f7618653e959ae9152.jpg" alt="Sneaker">
+                <h5>R<span class="price"> 4050.99</span></h5>
+
+                <input class="qty" type="number" value="1">
+                <button style="border-radius: 30px;top: 50px;" type="button"
+                    class="btn btn-default btn-sm cartButton add">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+            </div>
+            <div class="images">
+                <div class="text-center">
+                    <h1 class="description">Vans Butterfly</h1>
+                </div>
+                <img class="car " src="https://i.pinimg.com/originals/bf/d9/f7/bfd9f784b0b2e5224c02092392823da9.jpg" alt="Sneaker">
+
+                <h5>R<span class="price"> 2299.99</span></h5>
+
+                <input class="qty" type="number" value="1">
+                <button style="border-radius: 30px;top: 50px;" type="button"
+                    class="btn btn-default btn-sm cartButton add">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+            </div>
+            <div class="images">
+                <div class="text-center">
+
+                    <h1 class="description">Vans Watermelon</h1>
+                </div>
+                <img class="car " src="https://i.pinimg.com/originals/ff/98/3d/ff983ddf25639e4f2abca4b359d7b43a.jpg" alt="Sneaker">
+
+                <h5>R<span class="price"> 1499.99</span></h5>
+
+                <input class="qty" type="number" value="1">
+                <button style="border-radius: 30px;top: 50px;" type="button"
+                    class="btn btn-default btn-sm cartButton add">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="images">
+                <div class="text-center">
+                    <h1 class="description">Nike Air Jordan</h1>
+                </div>
+                <img class="car " src="https://i.pinimg.com/originals/90/59/9e/90599e524eca5099294daba551630ab9.jpg" alt="Sneaker">
+
+                <h5>R<span class="price"> 2000.00</span></h5>
+
+                <input class="qty" type="number" value="1">
+                <button style="border-radius: 30px;top: 50px;" type="button"
+                    class="btn btn-default btn-sm cartButton add">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+            </div>
+            <div class="images">
+                <div class="text-center">
+                    <h1 class="description">Adidas Retro</h1>
+                </div>
+                <img class="car " src="https://i.pinimg.com/originals/22/80/69/228069962901a808a17e64051f910302.jpg" alt="Sneaker">
+
+                <h5>R<span class="price"> 1700.00</span></h5>
+
+                <input class="qty" type="number" value="1">
+                <button style="border-radius: 30px;top: 50px;" type="button"
+                    class="btn btn-default btn-sm cartButton add">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+            </div>
+            <div class="images">
+                <div class="text-center">
+                    <h1 class="description">Jordans 92</h1>
+                </div>
+                <img class="car " src="https://i.pinimg.com/originals/ca/73/6f/ca736f06a5c4034a75f8a4e262455319.jpg" alt="Sneaker">
+
+                <h5>R<span class="price">2300.00</span></h5>
+
+                <input class="qty" type="number" value="1">
+                <button style="border-radius: 30px;top: 50px;" type="button"
+                    class="btn btn-default btn-sm cartButton add">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+    </div>
+    <section class="footer">
+        <footer>
+            <nav class="navbar fixed-bottom navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+
+                    <h6>
+                        Copyright © 2019 Designed by nate_nonpareil | Created by ImraanMeyer. All rights reserved.
+                    </h6>
+                </a>
+            </nav>
+        </footer>
+    </section>
+    <script type="text/javascript">
+    </script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

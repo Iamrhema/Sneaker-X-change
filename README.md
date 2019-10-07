@@ -1,2 +1,2 @@
-# sneaker-X-change
-Responsive sneaker store with a fully functional cart.
+# Sneaker-X-change
+This is an interactive online store that sells shoes online.
